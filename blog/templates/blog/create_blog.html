@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block title %}Create Blog - My Blog{% endblock %}
+
+{% block content %}
+
+  <h2>Create Blog</h2>
+
+  <form method="post" enctype="multipart/form-data">
+    {{ csrf_input() }}
+    {{ form.hidden_tag() }}
+
+    <label for="{{ form.title.id_for_label }}">Title:</label>
+    {{ form.title }}
+    <br>
+
+    <label for="{{ form.subtitle.id_for_label }}">Subtitle:</label>
+    {{ form.subtitle }}
+    <br>
+
+    <label for="{{ form.body.id_for_label }}">Body:</label>
+    {{ form.body }}
+    <br>
+
+    <label for="{{ form.author.id_for_label }}">Author:</label>
+    {{ form.author }}
+    <br>
+
+    <label for="{{ form.date.id_for_label }}">Date:</label>
+    {{ form.date }}
+    <br>
+
+    <label for="{{ form.image.id_for_label }}">Image:</label>
+    {{ form.image }}
+    <br>
+
+    <button type="submit">Create Blog</button>
+  </form>
+
+  <a href="{{ url_for('blog_list') }}">Back to Blog List</a>
+
+{% endblock %}

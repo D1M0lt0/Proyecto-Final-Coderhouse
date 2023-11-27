@@ -1,0 +1,11 @@
+from django import forms
+from .models import Blog
+
+class BlogForm(forms.ModelForm):
+    class Meta:
+        model = Blog
+        fields = ['title', 'subtitle', 'body', 'author', 'date', 'image']
+
+        widgets = {
+            'date': forms.DateInput(attrs={'type': 'date'}),
+        }

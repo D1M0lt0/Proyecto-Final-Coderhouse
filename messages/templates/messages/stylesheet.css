@@ -1,0 +1,94 @@
+body, h1, h2, h3, p, ul, li, a, form, input, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #2980b9;
+}
+
+nav a {
+    display: inline-block;
+    padding: 1em;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #1f618d;
+}
+
+main {
+    padding: 1em 0;
+}
+
+h2 {
+    color: #3498db;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1f618d;
+}
+
+a {
+    color: #3498db;
+}
+
+a:hover {
+    color: #1f618d;
+}
+
+footer {
+    background-color: #3498db;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
